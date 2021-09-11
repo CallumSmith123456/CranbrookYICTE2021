@@ -1,0 +1,113 @@
+.diagram {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    z-index: -1;
+}
+
+.button-container {
+    display: inline-block;
+    margin-bottom: 20px;
+    position:absolute;
+    right: 1%;
+}
+
+.c_ls {
+    position:absolute; bottom: 1.75%; right: 1%;
+}
+
+#time {
+    display: inline;
+    text-align: right;
+    font-style: italic;
+    font-size: 9pt;
+    position: relative; top: -1px;
+}
+
+#refresh {
+    display: inline;
+    margin-left: 8px;
+}
+
+.info {
+    padding: 15px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    width: 200px;
+    overflow: hidden;
+    padding-bottom: 0px;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.exact {
+    float: left;
+}
+
+.percent {
+    float: right;
+    padding-top: 8px;
+}
+
+p {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h4 {
+    margin: 0px;
+    padding-bottom: 8px;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+.valvecontrol {
+    padding-top: 70px;
+    display: block;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+/*.water {
+    position: absolute;
+    top:55.7px;
+    left:60px;
+    border-radius: 4px;
+    z-index: 2;
+    background-color: blue;
+    height: 196px;
+    width: 131px;
+}*/
+
+.diagramcontainer {
+    display: block;
+    margin-bottom: 26px;
+}
+
+#charts {
+    position: absolute; right: 2%; top: 80px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    width: 600px;
+    height: 566.5px;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    width: inherit;
+    height: 310.5px;
+}
+
+.chart {
+    padding-top: 18px;
+    width: 300px;
+}
+
+.chart-title {
+    margin-bottom: -8px;
+}
