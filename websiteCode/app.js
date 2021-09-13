@@ -33,17 +33,17 @@ var server = app.listen(3000, (req, res) => {
 
 // Sending data to the client
 app.get('/sendData', (req, res) => {
-    parser.on("data", (line) => {
-        var serialData = line; 
-        var volume = (1 - (serialData/tankHeight)) * Math.PI * Math.pow(tankRadius, 2) * tankHeight;  
+    parser.on("data", (line) => { 
+        var serialData = line; //Receiving data from the arduino
+        var volume = (1 - (serialData/tankHeight)) * Math.PI * Math.pow(tankRadius, 2) * tankHeight; //Calculate the volume of the tank 
         newData = {
             tankLevel: volume,
             time: Date.now(), 
         }; 
-        database.insert(newData); 
+        database.insert(newData); //Store this data with a timestamp in the database
     }); 
     database.find({}, (err, docs) => {
-        res.send(docs);
+        res.send(docs); //Send all of the data to the client
         if(err) console.log(err); 
     });
 

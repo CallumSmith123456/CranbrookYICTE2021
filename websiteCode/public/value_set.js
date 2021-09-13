@@ -21,6 +21,8 @@ for (let i = 0; i < jsonData.length; i++) {
     jsonData[i].tankLevel = parseInt(jsonData[i].tankLevel);
 }
 
+
+
 for (let i = 0; i < jsonData.length; i++) {
     dataY.push(jsonData[i].tankLevel); 
     dataX.push(jsonData[i].time); 
