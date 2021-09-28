@@ -41,6 +41,7 @@ void loop() {
   duration = pulseIn(echoPin, HIGH);
   //Calculate the distance (in cm) based on the speed of sound.
   distance = duration/58.2;
+  Serial.println(distance);
   if (distance < 33) { 
     char data[] = "";
     char sentinel[] = "/"; 
@@ -48,7 +49,7 @@ void loop() {
     radio.write(&sentinel, sizeof(sentinel)); 
     radio.write(&data[0], sizeof(data[0])); 
     radio.write(&data[1], sizeof(data[1])); 
-  
+     
   }   
   else {
     Serial.println("There is no water detected");

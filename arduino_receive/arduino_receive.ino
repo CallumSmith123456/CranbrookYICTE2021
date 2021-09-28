@@ -3,6 +3,11 @@
 #include <SPI.h>
 #include <nRF24L01.h>
 #include <RF24.h>
+
+
+
+
+
 /*-----( Declare Constants and Pin Numbers )-----*/
 #define CE_PIN   9
 #define CSN_PIN 10
@@ -31,12 +36,11 @@ void loop()   /****** LOOP: RUNS CONSTANTLY ******/
 
   if ( radio.available() )
   {
-    char text[81] = ""; 
-    char 
-    radio.read(&text, sizeof(text)); 
-    if text == "/" {
-      
-    }
+    char text[81] = "";
+    radio.read(&text, sizeof(text));
     Serial.println(text); 
+   
   }
+ 
+  
 }

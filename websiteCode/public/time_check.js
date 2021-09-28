@@ -14,3 +14,4 @@ var time2 = time[4];
 
 var message = "Tank data last refreshed on " + time1 + "at " + time2 + " (AEST)";
 document.getElementById("time").innerHTML = message;
+
