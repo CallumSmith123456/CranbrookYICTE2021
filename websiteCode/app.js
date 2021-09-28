@@ -16,7 +16,7 @@ database.loadDatabase();
 const SerialPort = require('serialport');
 const Readline = require('@serialport/parser-readline');
 
-const port = new SerialPort('COM8', {
+const port = new SerialPort('    ', {
     baudRate: 9600,
 });
 

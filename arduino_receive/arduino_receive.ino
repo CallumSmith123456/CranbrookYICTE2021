@@ -18,7 +18,7 @@ int joystick;
 const uint64_t pipe = 0xE8E8F0F0E1LL; // Define the transmit pipe
 
 
-/*-----( Declare objects )-----*/
+/*-----( Dxeclare objects )-----*/
 RF24 radio(CE_PIN, CSN_PIN); // Create a Radio
 
 void setup()   /****** SETUP: RUNS ONCE ******/
